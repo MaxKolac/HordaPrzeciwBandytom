@@ -7,14 +7,14 @@ import pyswarms as ps
 def objective_function(x):
     # x is the position of each particle, representing the probability of winning on each machine
     # Calculate the total probability of winning based on each particle's position
-    #total_probability = np.sum(x) / len(x)
+    total_probability = np.sum(x) / len(x)
     # Maximize the total probability
-    #return total_probability
-    #return random.normalvariate()
-    #if random.randint(0, 1) == 1:
-#        return True
-#    else:
-#        return False
+    return total_probability
+    return random.normalvariate()
+    if random.randint(0, 1) == 1:
+        return True
+    else:
+        return False
     return np.sum(x)
 
 
